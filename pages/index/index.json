@@ -1,6 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarBackgroundColor": "#28a4fc",
-  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#303038",
+  "navigationBarTextStyle": "white",
   "navigationBarTitleText": "魅音播放器-首页"
 }

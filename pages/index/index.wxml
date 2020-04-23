@@ -2,8 +2,61 @@
 
 
 <view class="body">
-  <view>
-    <video class="hello" src="https://player.youku.com/embed/XNDM3NzQ0ODg3Mg==?client_id=d0b1b77a17cded3b"        binderror="videoErrorCallback"></video>
+
+  <video class="helloVideo" src="https://fyz1522426323.oss-cn-beijing.aliyuncs.com/ws/hello.mp4" binderror="videoErrorCallback" autoplay="true" loop="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill"></video>
+
+  <text class="tag">推荐音乐</text>
+
+  <view class="recommend">
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
   </view>
-  <text>pages/index/index.wxml</text>
+
+  <view class="recommend">
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+  </view>
+
+
+  <text class="tag">最新音乐</text>
+
+  <view class="recommend">
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+    <view class="musicBlock">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
+    </view>
+  </view>
+
+
 </view>

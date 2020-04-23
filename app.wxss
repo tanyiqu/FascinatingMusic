@@ -8,3 +8,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.tag{
+  margin: 5rpx 10rpx;
+  font-size: 18px;
+  font-weight: bold;
+}

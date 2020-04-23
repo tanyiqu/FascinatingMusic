@@ -1,13 +1,11 @@
-// pages/index/index.js
+// pages/login/login.js
 Page({
 
-
-  
   /**
    * 页面的初始数据
    */
   data: {
-      my_false: false,
+
   },
 
   /**
@@ -16,19 +14,6 @@ Page({
   onLoad: function (options) {
 
   },
-
-
-  videoErrorCallback: function (e) {
-
-    console.log('视频错误信息:' + e.detail.errMsg);
-
-  },
-
-
-
-
-
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成
