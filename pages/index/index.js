@@ -1,4 +1,7 @@
 // pages/index/index.js
+//获取数据
+var dataObj = require("../../data/indexData.js")
+
 Page({
 
 
@@ -14,6 +17,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 加载首页数据
+    this.setData({
+      recommendList_1: dataObj.recommendList_1,
+      recommendList_2: dataObj.recommendList_2,
+      latestMusic: dataObj.latestMusic
+    })
+    
 
   },
 

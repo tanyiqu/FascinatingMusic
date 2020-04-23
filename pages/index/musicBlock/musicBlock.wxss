@@ -1,0 +1,19 @@
+.musicBlock {
+  width: 32%;
+  margin: 5rpx;
+}
+
+.musicBlock image {
+  width: 100%;
+}
+
+.musicBlock text {
+  font-size: 24rpx;
+  display: -webkit-box;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

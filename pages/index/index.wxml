@@ -1,61 +1,30 @@
 <!--pages/index/index.wxml-->
 
-
+<import src="musicBlock/musicBlock" />
 <view class="body">
 
-  <video class="helloVideo" src="https://fyz1522426323.oss-cn-beijing.aliyuncs.com/ws/hello.mp4" binderror="videoErrorCallback" autoplay="true" loop="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill"></video>
+  <video class="helloVideo" src="https://fyz1522426323.oss-cn-beijing.aliyuncs.com/ws/hello.mp4" autoplay="true" loop="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill"/>
 
   <text class="tag">推荐音乐</text>
 
-  <view class="recommend">
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
-
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
+  <view class="music-Line">
+    <block wx:for="{{recommendList_1}}" wx:key="key" wx:for-item="item">
+      <template is="music-block" data="{{item}}" />
+    </block>
   </view>
 
-  <view class="recommend">
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
-
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
+  <view class="music-Line">
+    <block wx:for="{{recommendList_2}}" wx:key="key" wx:for-item="item">
+      <template is="music-block" data="{{item}}" />
+    </block>
   </view>
-
 
   <text class="tag">最新音乐</text>
 
-  <view class="recommend">
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
-
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
-    <view class="musicBlock">
-      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
-      <text>『睡前故事』闭眼倾听 沉入恬静梦乡</text>
-    </view>
+  <view class="music-Line">
+    <block wx:for="{{latestMusic}}" wx:key="key" wx:for-item="item">
+      <template is="music-block" data="{{item}}" />
+    </block>
   </view>
 
 
