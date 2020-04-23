@@ -1,2 +1,9 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+
+
+<view class="body">
+  <view>
+    <video class="hello" src="https://player.youku.com/embed/XNDM3NzQ0ODg3Mg==?client_id=d0b1b77a17cded3b"        binderror="videoErrorCallback"></video>
+  </view>
+  <text>pages/index/index.wxml</text>
+</view>
