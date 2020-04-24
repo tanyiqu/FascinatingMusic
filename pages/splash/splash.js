@@ -6,7 +6,7 @@ Page({
    */
   data: {
     my_false: false,
-    splashLink: "http://localhost:8080/resource/video/hello.mp4"
+    splashLink: "http://localhost:8080/resource/video/splash.mp4"
   },
 
   /**
@@ -18,7 +18,6 @@ Page({
 
   //播放结束
   onVideoEnded: function(msg) {
-    console.log('播放结束')
     wx.redirectTo({
       url: '../index/index',
     })

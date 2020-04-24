@@ -1,20 +1,26 @@
 <!--pages/play/play.wxml-->
-<text>pages/play/play.wxml</text>
 
-<!-- 
-<audio src="https://m701.music.126.net/20200424111402/bffe93fc911e32955e1ccd90c7bbac58/jdyyaac/540f/065e/545c/ce28d419c8140d029a6fc69c9020c5ad.m4a"></audio> -->
 
-<audio
-  poster="{{poster}}"
-  name="{{name}}"
-  author="{{author}}"
-  src="{{src}}"
-  id="myAudio"
-  controls
-  loop
-></audio>
 
-<button type="primary" bindtap="audioPlay">播放</button>
-<button type="primary" bindtap="audioPause">暂停</button>
-<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
-<button type="primary" bindtap="audioStart">回到开头</button>
+<view class="root">
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" autoplay="true" controls='' loop></audio>
+
+
+
+  <view class="body">
+  </view>
+
+  <view style="background-color:#7f7f7f;width:100%;height:1px;"></view>
+
+  <view class="bottomTools">
+    <image src="../../resource/imgs/btns/btn_random.png" catchtap="audioPlay" mode="widthFix" />
+    <image src="../../resource/imgs/btns/btn_last.png" catchtap="audioPlay" mode="widthFix" />
+
+    <image wx:if="{{playing}}" src="../../resource/imgs/btns/btn_pause.png" catchtap="audioPlay" mode="widthFix" />
+    <image wx:else src="../../resource/imgs/btns/btn_play.png" catchtap="audioPlay" mode="widthFix" />
+
+
+    <image src="../../resource/imgs/btns/btn_next.png" catchtap="audioPlay" mode="widthFix" />
+    <image src="../../resource/imgs/btns/btn_list.png" catchtap="audioPlay" mode="widthFix" />
+  </view>
+</view>

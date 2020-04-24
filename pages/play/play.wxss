@@ -1,1 +1,38 @@
 /* pages/play/play.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  width: 100%;
+  height: 87%;
+  background-color: #f8f6f2;
+}
+
+.bottomTools {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 12%;
+  position: fixed;
+  margin: 0;
+  pad: 0;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.bottomTools image {
+  width: 10%;
+  margin: 0 auto;
+}

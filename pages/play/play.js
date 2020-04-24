@@ -1,29 +1,36 @@
 // pages/play/play.js
+
+// var playing = false;
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    poster: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
-    name: '此时此刻',
-    author: '许巍',
+    poster: 'http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130',
+    name: '放課後ディストラクション',
+    author: 'やくしまるえつこ',
     src: 'http://localhost:8080/resource/01.m4a',
-
+    playing: false
   },
 
-  audioPlay() {
-    this.audioCtx.play()
+  audioPlay: function() {
+    if (this.playing) {
+      this.audioCtx.pause()
+      this.setData({
+        playing: false
+      })
+      this.playing = false
+    } else {
+      this.audioCtx.play()
+      this.setData({
+        playing: true
+      })
+      this.playing = true
+    }
   },
-  audioPause() {
-    this.audioCtx.pause()
-  },
-  audio14() {
-    this.audioCtx.seek(14)
-  },
-  audioStart() {
-    this.audioCtx.seek(0)
-  },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -38,6 +45,7 @@ Page({
   onReady: function() {
     // 使用 wx.createAudioContext 获取 audio 上下文 context
     this.audioCtx = wx.createAudioContext('myAudio')
+
   },
 
   /**
