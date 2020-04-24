@@ -6,7 +6,7 @@ Page({
    */
   data: {
     my_false: false,
-    splashLink: "http://vwecam.gtimg.com/1006_04a1a2de9a3144e5837cd9d0a961ae6c.f20.mp4?ptype=http&vkey=758CD858F92CB62F471904F86860902A5F74B127A3CFB4DC848E9964C53DAC750FADBD6B3A36306BEDC0D555F8C5CC816514D99233FBC8E1&sdtfrom=v1000&owner=0"
+    splashLink: "http://localhost:8080/resource/video/hello.mp4"
   },
 
   /**
