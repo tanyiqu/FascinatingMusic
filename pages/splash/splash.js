@@ -1,45 +1,36 @@
-// pages/index/index.js
-//获取数据
-var dataObj = require("../../data/indexData.js")
-
+// pages/splash/splash.js
 Page({
-
-
 
   /**
    * 页面的初始数据
    */
   data: {
     my_false: false,
+    splashLink: "http://vwecam.gtimg.com/1006_04a1a2de9a3144e5837cd9d0a961ae6c.f20.mp4?ptype=http&vkey=758CD858F92CB62F471904F86860902A5F74B127A3CFB4DC848E9964C53DAC750FADBD6B3A36306BEDC0D555F8C5CC816514D99233FBC8E1&sdtfrom=v1000&owner=0"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    // 加载首页数据
-    this.setData({
-      helloLink: dataObj.helloLink,
-      recommendList_1: dataObj.recommendList_1,
-      recommendList_2: dataObj.recommendList_2,
-      latestMusic: dataObj.latestMusic
+
+  },
+
+  //播放结束
+  onVideoEnded: function(msg) {
+    console.log('播放结束')
+    wx.redirectTo({
+      url: '../index/index',
     })
-
-
   },
 
-
-  videoErrorCallback: function(e) {
-
-    console.log('视频错误信息:' + e.detail.errMsg);
-
+  //播放错误，直接跳到主页 
+  onVideoError: function(msg) {
+    console.log('播放错误')
+    wx.redirectTo({
+      url: '../index/index',
+    })
   },
-
-
-
-
-
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -1,0 +1,8 @@
+<!--pages/splash/splash.wxml-->
+<!-- 
+启动页
+延时几秒后进入主页
+-->
+<view class="container2">
+  <video class="helloVideo" src="{{splashLink}}" autoplay="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill" bindended="onVideoEnded" binderror="onVideoError"/>
+</view>

@@ -3,7 +3,7 @@
 <import src="musicBlock/musicBlock" />
 <view class="body">
 
-  <video class="helloVideo" src="https://fyz1522426323.oss-cn-beijing.aliyuncs.com/ws/hello.mp4" autoplay="true" loop="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill"/>
+  <video class="helloVideo" src="{{helloLink}}" autoplay="true" loop="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill"/>
 
   <text class="tag">推荐音乐</text>
 
