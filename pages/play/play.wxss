@@ -14,7 +14,7 @@ page {
 
 .body {
   width: 100%;
-  height: 87%;
+  height: 83%;
   background-color: #f8f6f2;
 }
 
@@ -35,4 +35,48 @@ page {
 .bottomTools image {
   width: 10%;
   margin: 0 auto;
+}
+
+/* ////////////////// */
+
+.flex {
+  display: flex;
+}
+
+.player {
+  width: 100%;
+  height: 5%;
+  /* position: relative;  */
+}
+
+.audioControls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.textl {
+  font-size: 22rpx;
+  width: 10%;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.textr {
+  font-size: 22rpx;
+  width: 10%;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.audioControls .slider {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.audioControls .slider slider{
+  margin-left: 8px;
+  margin-right: 8px;
 }

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#303038",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "播放"
 }

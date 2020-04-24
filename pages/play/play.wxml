@@ -1,22 +1,26 @@
 <!--pages/play/play.wxml-->
 
-
-
 <view class="root">
-  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" autoplay="true" controls='' loop></audio>
-
-
-
+  
   <view class="body">
+
   </view>
 
-  <view style="background-color:#7f7f7f;width:100%;height:1px;"></view>
+  <view class='player'>
+    <view class='audioControls'>
+      <text class="textl">{{showTime1}}</text>
+      <view class='slider'>
+        <slider bindchange='sliderChange' activeColor='red' block-size="12" value='{{audioTime}}'/>
+      </view>
+      <text class="textr">{{showTime2}}</text>
+    </view>
+  </view>
 
   <view class="bottomTools">
     <image src="../../resource/imgs/btns/btn_random.png" catchtap="audioPlay" mode="widthFix" />
     <image src="../../resource/imgs/btns/btn_last.png" catchtap="audioPlay" mode="widthFix" />
 
-    <image wx:if="{{playing}}" src="../../resource/imgs/btns/btn_pause.png" catchtap="audioPlay" mode="widthFix" />
+    <image wx:if="{{isPlayAudio}}" src="../../resource/imgs/btns/btn_pause.png" catchtap="audioPlay" mode="widthFix" />
     <image wx:else src="../../resource/imgs/btns/btn_play.png" catchtap="audioPlay" mode="widthFix" />
 
 
