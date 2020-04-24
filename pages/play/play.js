@@ -9,22 +9,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-    audiolist: [
-      {
-        audiosrc: 'http://localhost:8080/resource/01.m4a',
-        coverimg: "http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130",
-        name: '放課後ディストラクション',
-        author: 'やくしまるえつこ',
-      }
-    ],
-    isPlayAudio: false,
+    audio: {
+      audiosrc: 'http://localhost:8080/resource/01.m4a',
+      cover: 'http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130',
+      name: '放課後ディストラクション',
+      author: 'やくしまるえつこ',
+    },
+    music_on: true, //音乐刚开始，用于设置旋转动画
+    isPlayAudio: false, //是否正在播放
     audioSeek: 0,
     audioDuration: 0,
     showTime1: '00:00',
     showTime2: '00:00',
-    audioTime: 0
+    audioTime: 0,
+    view: {
+      Width: 100,
+      Height: 100
+    }
   },
 
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function(options) {
+    //动态设置圆圈大小
+    var sw = wx.getSystemInfoSync().windowWidth;
+    var w = sw * 0.75;
+    this.setData({
+      view: {
+        Width: w,
+        Height: w
+      }
+    })
+  },
+
+  // 播放/暂停
   audioPlay: function() {
     if (this.isPlayAudio) {
       innerAudioContext.pause()
@@ -43,9 +62,9 @@ Page({
 
   Initialization() {
     var t = this;
-    if (this.data.audiolist[0].audiosrc.length != 0) {
+    if (this.data.audio.audiosrc.length != 0) {
       //设置src
-      innerAudioContext.src = this.data.audiolist[0].audiosrc;
+      innerAudioContext.src = this.data.audio.audiosrc;
       //运行一次
       innerAudioContext.play();
       innerAudioContext.pause();
@@ -74,7 +93,7 @@ Page({
   //拖动进度条事件
   sliderChange(e) {
     var that = this;
-    innerAudioContext.src = this.data.audiolist[0].audiosrc;
+    innerAudioContext.src = this.data.audio.audiosrc;
     //获取进度条百分比
     var value = e.detail.value;
     this.setData({
@@ -110,7 +129,7 @@ Page({
       });
     } else {
       //如果在暂停，获取播放时间并继续播放
-      innerAudioContext.src = this.data.audiolist[0].audiosrc;
+      innerAudioContext.src = this.data.audio.audiosrc;
       if (innerAudioContext.duration != 0) {
         this.setData({
           audioDuration: innerAudioContext.duration
@@ -175,18 +194,9 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
-
-  },
-
-  /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-    // 使用 wx.createAudioContext 获取 audio 上下文 context
-    this.audioCtx = wx.createAudioContext('myAudio')
 
   },
 

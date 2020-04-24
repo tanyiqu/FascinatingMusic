@@ -1,21 +1,34 @@
 <!--pages/play/play.wxml-->
 
 <view class="root">
-  
+
   <view class="body">
+
+    <view>
+      <text>{{audio['name']}}</text>
+    </view>
+    <view>
+      <text>{{audio['author']}}</text>
+    </view>
+
+    <view class="cover-black" style="width:{{view.Width}}px;height:{{view.Height}}px;">
+      <image class='cover{{music_on? " music_on":""}}' style="animation-play-state:{{isPlayAudio?'running':'paused'}}" src="{{audio['cover']}}" mode="widthFix" />
+    </view>
 
   </view>
 
+  <!-- 进度条 -->
   <view class='player'>
     <view class='audioControls'>
       <text class="textl">{{showTime1}}</text>
       <view class='slider'>
-        <slider bindchange='sliderChange' activeColor='red' block-size="12" value='{{audioTime}}'/>
+        <slider bindchange='sliderChange' activeColor='red' block-size="12" value='{{audioTime}}' />
       </view>
       <text class="textr">{{showTime2}}</text>
     </view>
   </view>
 
+  <!--按钮  -->
   <view class="bottomTools">
     <image src="../../resource/imgs/btns/btn_random.png" catchtap="audioPlay" mode="widthFix" />
     <image src="../../resource/imgs/btns/btn_last.png" catchtap="audioPlay" mode="widthFix" />
