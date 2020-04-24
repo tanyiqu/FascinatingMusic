@@ -1,51 +1,32 @@
-// pages/index/index.js
-//获取数据
-var dataObj = require("../../data/indexData.js")
+// pages/search/search.js
+
+var searchword = "ss"
 
 Page({
-
-
 
   /**
    * 页面的初始数据
    */
   data: {
-    my_false: false,
+
+  },
+
+  // 搜索
+  onSearcTap() {
+    // 获取关键词
+    console.log(searchword)
+  },
+
+  getInputValue(e) {
+    searchword = e.detail.value;
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    // 加载首页数据
-    this.setData({
-      helloLink: dataObj.helloLink,
-      recommendList_1: dataObj.recommendList_1,
-      recommendList_2: dataObj.recommendList_2,
-      latestMusic: dataObj.latestMusic
-    })
-
 
   },
-
-  onSearchTap(){
-    console.log('搜索')
-    wx.navigateTo({
-      url: '../search/search',
-    })
-  },
-
-  videoErrorCallback: function(e) {
-
-    console.log('视频错误信息:' + e.detail.errMsg);
-
-  },
-
-
-
-
-
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成

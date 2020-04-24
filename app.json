@@ -2,6 +2,7 @@
   "pages": [
     "pages/splash/splash",
     "pages/index/index",
+    "pages/search/search",
     "pages/play/play"
   ],
   "window": {

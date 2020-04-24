@@ -1,0 +1,18 @@
+/* pages/search/search.wxss */
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* background-color: #7f7f7f; */
+}
+
+.input{
+  /* 设置只有底部一条线 */
+  border-bottom: solid 1px #c1c7cb;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+

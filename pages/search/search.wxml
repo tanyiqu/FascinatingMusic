@@ -1,0 +1,10 @@
+<!--pages/search/search.wxml-->
+
+<view class="root">
+
+  <view class="searchBar">
+    <input class="input" bindinput="getInputValue"></input>
+    <button class="btn" bindtap="onSearcTap">搜索</button>
+  </view>
+
+</view>

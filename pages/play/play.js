@@ -1,6 +1,5 @@
 // pages/play/play.js
 
-// var playing = false;
 const app = getApp()
 const innerAudioContext = wx.createInnerAudioContext();
 Page({

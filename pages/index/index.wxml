@@ -3,7 +3,15 @@
 <import src="musicBlock/musicBlock" />
 <view class="body">
 
-  <video class="helloVideo" src="{{helloLink}}" autoplay="true" loop="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill"/>
+  <video class="helloVideo" src="{{helloLink}}" autoplay="true" loop="true" muted="true" s controls="{{my_false}}" enable-progress-gesture="{{my_false}}" objectFit="fill" />
+
+  <view class="tool">
+    <button>推荐</button>
+    <button>歌单</button>
+    <button>排行</button>
+    <button bindtap="onSearchTap">搜索</button>
+  </view>
+
 
   <text class="tag">推荐音乐</text>
 

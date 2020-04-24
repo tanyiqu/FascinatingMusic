@@ -10,6 +10,11 @@ page {
   width: 100%;
 }
 
+.tool{
+  display: flex;
+  flex-direction: row;
+}
+
 .music-Line {
   width: 100%;
   margin: 5rpx;
