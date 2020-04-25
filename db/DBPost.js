@@ -8,25 +8,17 @@ class DBPost {
   // 根据关键词获取搜索结果
   search(searchword) {
     var result = [{
-      'name': 'name1',
-      'author': 'author1',
-      'musicId': '0'
+      name: 'name1',
+      author: 'author1',
+      musicId: '1'
     }, {
-      'name': 'name1',
-      'author': 'author1',
-      'musicId': '2'
+      name: 'name2',
+      author: 'author2',
+      musicId: '2'
     }, {
-      'name': 'name1',
-      'author': 'author1',
-      'musicId': '3'
-    }, {
-      'name': 'name1',
-      'author': 'author1',
-      'musicId': '4'
-    }, {
-      'name': 'name1',
-      'author': 'author1',
-      'musicId': '5'
+      name: 'name3',
+      author: 'author3',
+      musicId: '3'
     }];
     return result;
   }
@@ -34,10 +26,10 @@ class DBPost {
   // 根据ID获取音乐的详细信息
   getMusicDetail(musicID) {
     var d = {
-      audiosrc: 'http://localhost:8080/resource/01.m4a',
-      cover: 'http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130',
-      name: '放課後ディストラクション',
-      author: 'やくしまるえつこ',
+      audiosrc: 'http://localhost:8080/resource/music/萤火虫之愿(完整版).mp3',
+      cover: 'http://localhost:8080/resource/music/萤火虫之愿(完整版).jpg',
+      name: '萤火虫之愿(完整版)',
+      author: '闫东炜',
     }
     return d
   }
