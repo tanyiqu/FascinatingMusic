@@ -13,15 +13,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // audio: {
-    //   audiosrc: 'http://localhost:8080/resource/01.m4a',
-    //   cover: 'http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130',
-    //   name: '放課後ディストラクション',
-    //   author: 'やくしまるえつこ',
-    // },
-    audio: {
-      audiosrc: 'http://localhost:8080/resource/music/萤火虫之愿(完整版).mp3'
-    },
     music_on: true, //音乐刚开始，用于设置旋转动画
     isPlayAudio: false, //是否正在播放
     audioSeek: 0,
@@ -59,16 +50,11 @@ Page({
         _this.Initialization();
         _this.loadaudio();
         _this.playAudio();
-        _this.data.isPlayAudio = true;
+        _this.setData({
+          isPlayAudio: true
+        })
       },
     })
-
-    // this.dbPost = new DBPost();
-    // // 把数据加载到页面
-
-    // this.setData({
-    //   audio: this.dbPost.getMusicDetail(musicId)
-    // })
   },
 
   initAppearance() {
@@ -85,18 +71,16 @@ Page({
 
   // 播放/暂停
   audioPlay: function() {
-    if (this.isPlayAudio) {
+    if (this.data.isPlayAudio) {
       innerAudioContext.pause()
       this.setData({
         isPlayAudio: false
       })
-      this.isPlayAudio = false
     } else {
       innerAudioContext.play()
       this.setData({
         isPlayAudio: true
       })
-      this.isPlayAudio = true
     }
   },
 
