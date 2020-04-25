@@ -7,6 +7,7 @@ class DBPost {
 
   // 根据关键词获取搜索结果
   search(searchword) {
+    console.log('搜索：[' + searchword + ']')
     var result = [{
       name: 'name1',
       author: 'author1',

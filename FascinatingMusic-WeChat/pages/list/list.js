@@ -17,11 +17,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    // 获取关键词
     var sw = options.searchword
-    console.log('搜索：[' + sw + ']')
     this.dbPost = new DBPost();
     //获取搜索结果
-    var result = this.dbPost.search(sw)
     this.setData({
       searchword: sw,
       searchResult: this.dbPost.search(sw)
