@@ -17,6 +17,7 @@ create table Yy(
 
 -- 查看
 select * from Yy;
+select * from Yy where yy_mz like '%萤%';
 
 -- 清空
 -- truncate table Yy;

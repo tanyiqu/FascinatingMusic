@@ -19,7 +19,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    var _this = this;
     // 获取关键词
     var sw = options.searchword
     this.dbPost = new DBPost();
@@ -27,8 +26,9 @@ Page({
       searchword: sw,
     })
     //获取搜索结果
-    utilApi.requestPromise("http://localhost:8081//Server/search?searchword=搜索XXX")
+    utilApi.requestPromise("http://localhost:8081//Server/search?searchword=" + sw)
       .then(res => {
+        console.log('data: ' + res.data)
         this.setData({
           searchResult: res.data
         })
