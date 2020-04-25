@@ -2,6 +2,9 @@
 import {
   DBPost
 } from '../../db/DBPost.js';
+
+const utilApi = require('../../utils/util.js')
+
 const app = getApp();
 const innerAudioContext = wx.createInnerAudioContext();
 Page({
@@ -16,6 +19,9 @@ Page({
     //   name: '放課後ディストラクション',
     //   author: 'やくしまるえつこ',
     // },
+    audio: {
+      audiosrc: 'http://localhost:8080/resource/music/萤火虫之愿(完整版).mp3'
+    },
     music_on: true, //音乐刚开始，用于设置旋转动画
     isPlayAudio: false, //是否正在播放
     audioSeek: 0,
@@ -33,17 +39,36 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    const _this = this
     // 设置外观
     this.initAppearance()
     // 获取播放音乐的id
     var musicId = options.musicId;
     console.log("musicId:" + musicId)
+    var url = "http://localhost:8081//Server/detail?musicId=" + musicId
+    console.log("url:" + url)
     // 根据ID获取音乐的详细信息
-    this.dbPost = new DBPost();
-    // 把数据加载到页面
-    this.setData({
-      audio: this.dbPost.getMusicDetail(musicId)
+
+    wx.request({
+      url: url,
+      success: function(res) {
+        _this.setData({
+          audio: res.data
+        })
+        // 获取完成后初始化
+        _this.Initialization();
+        _this.loadaudio();
+        _this.playAudio();
+        _this.data.isPlayAudio = true;
+      },
     })
+
+    // this.dbPost = new DBPost();
+    // // 把数据加载到页面
+
+    // this.setData({
+    //   audio: this.dbPost.getMusicDetail(musicId)
+    // })
   },
 
   initAppearance() {
@@ -219,8 +244,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    this.Initialization();
-    this.loadaudio();
+    // this.Initialization();
+    // this.loadaudio();
   },
 
   /**

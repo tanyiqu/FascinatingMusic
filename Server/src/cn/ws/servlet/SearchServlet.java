@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
 
+//测试 http://localhost:8081//Server/search?searchword=萤
 public class SearchServlet extends HttpServlet {
 
     @Override

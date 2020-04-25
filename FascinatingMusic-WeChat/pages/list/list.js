@@ -26,9 +26,9 @@ Page({
       searchword: sw,
     })
     //获取搜索结果
-    utilApi.requestPromise("http://localhost:8081//Server/search?searchword=" + sw)
+    var url = "http://localhost:8081//Server/search?searchword=" + sw
+    utilApi.requestPromise(url)
       .then(res => {
-        console.log('data: ' + res.data)
         this.setData({
           searchResult: res.data
         })
