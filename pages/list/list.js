@@ -1,6 +1,8 @@
-// pages/search/search.js
+// pages/list/list.js
 
-var searchword = ""
+import {
+  DBPost
+} from '../../db/DBPost.js'
 
 Page({
 
@@ -11,32 +13,20 @@ Page({
 
   },
 
-  // 搜索
-  onSearcTap() {
-    // 处理关键词
-    searchword = searchword.trim()
-    if (searchword == ''){
-      console.log('空')
-      wx.showToast({
-        title: '请输入关键词！',
-        icon: 'none',
-      })
-      return
-    }
-    wx.navigateTo({
-      url: '../list/list?searchword=' + searchword, 
-    })
-  },
-
-  getInputValue(e) {
-    searchword = e.detail.value;
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    var sw = options.searchword
+    console.log('搜索：[' + sw + ']')
+    this.dbPost = new DBPost();
+    //获取搜索结果
+    var result = this.dbPost.search(sw)
+    this.setData({
+      searchword: sw,
+      searchResult: this.dbPost.search(sw)
+    })
+    console.log(this.data.searchResult)
   },
 
   /**

@@ -66,6 +66,14 @@
 					"id": -1,
 					"name": "搜索",
 					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索结果",
+					"pathName": "pages/list/list",
+					"query": "searchword=萤火虫",
 					"scene": null
 				}
 			]

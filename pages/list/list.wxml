@@ -1,0 +1,17 @@
+<!--pages/list/list.wxml-->
+<view class="root">
+
+<text>"{{searchword}}"的搜索结果：</text>
+
+  <block wx:for="{{searchResult}}" wx:key="key" wx:for-item="item">
+    <!-- 不用模板了 -->
+    <view class="item">
+      <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
+      <text class="name">{{item.name}}</text>
+      <text class="author">{{item.author}}</text>
+    </view>
+  </block>
+
+
+
+</view>

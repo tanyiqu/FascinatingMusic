@@ -1,0 +1,39 @@
+/* pages/list/list.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #7f7f7f; */
+  position: relative;
+  border-bottom: solid 1px #c1c7cb;
+}
+
+.item image {
+  width: 110rpx;
+  position: absolute;
+  left: 5rpx;
+}
+
+.name {
+  position: absolute;
+  left: 130rpx;
+  top: 12rpx;
+  font-size: 32rpx;
+}
+
+.author {
+  position: absolute;
+  left: 130rpx;
+  bottom: 15rpx;
+  font-size: 30rpx;
+  color: #7f7f7f;
+}

@@ -3,6 +3,7 @@
     "pages/splash/splash",
     "pages/index/index",
     "pages/search/search",
+    "pages/list/list",
     "pages/play/play"
   ],
   "window": {
