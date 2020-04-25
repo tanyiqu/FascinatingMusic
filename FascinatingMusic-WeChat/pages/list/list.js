@@ -4,6 +4,8 @@ import {
   DBPost
 } from '../../db/DBPost.js';
 
+const utilApi = require('../../utils/util.js')
+
 Page({
 
   /**
@@ -17,14 +19,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    var _this = this;
     // 获取关键词
     var sw = options.searchword
     this.dbPost = new DBPost();
-    //获取搜索结果
     this.setData({
       searchword: sw,
-      searchResult: this.dbPost.search(sw)
     })
+    //获取搜索结果
+    utilApi.requestPromise("http://localhost:8081//Server/search?searchword=搜索XXX")
+      .then(res => {
+        this.setData({
+          searchResult: res.data
+        })
+      })
   },
 
 

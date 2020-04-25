@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class SearchServlet extends HttpServlet {
 
@@ -33,9 +32,10 @@ public class SearchServlet extends HttpServlet {
             ResultSet rs = DBUtil.executeQuery(sql);
             while (rs.next()){
                 sb.append("{");
-                sb.append("name:").append(rs.getString("yy_mz")).append(",");
-                sb.append("author:").append(rs.getString("yy_zz")).append(",");
-                sb.append("musicId:").append(rs.getString("yy_id"));
+                sb.append("\"name\":\"").append(rs.getString("yy_mz")).append("\",");
+                sb.append("\"author\":\"").append(rs.getString("yy_zz")).append("\",");
+                sb.append("\"cover\":\"").append(rs.getString("yy_fmdz")).append("\",");
+                sb.append("\"musicId\":\"").append(rs.getString("yy_id")).append("\"");
 
                 sb.append("},");
             }

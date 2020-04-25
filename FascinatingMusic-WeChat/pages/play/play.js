@@ -37,6 +37,7 @@ Page({
     this.initAppearance()
     // 获取播放音乐的id
     var musicId = options.musicId;
+    console.log("musicId:" + musicId)
     // 根据ID获取音乐的详细信息
     this.dbPost = new DBPost();
     // 把数据加载到页面
