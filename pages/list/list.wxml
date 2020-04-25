@@ -5,7 +5,7 @@
 
   <block wx:for="{{searchResult}}" wx:key="key" wx:for-item="item">
     <!-- 不用模板了 -->
-    <view class="item">
+    <view class="item" catchtap="playMusic" data-music-id="{{item.musicId}}">
       <image src="../../resource/imgs/cover01.jpg" mode="widthFix" />
       <text class="name">{{item.name}}</text>
       <text class="author">{{item.author}}</text>

@@ -2,7 +2,7 @@
 
 import {
   DBPost
-} from '../../db/DBPost.js'
+} from '../../db/DBPost.js';
 
 Page({
 
@@ -26,8 +26,16 @@ Page({
       searchword: sw,
       searchResult: this.dbPost.search(sw)
     })
-    console.log(this.data.searchResult)
   },
+
+
+  playMusic(e) {
+    var musicId = e.currentTarget.dataset.musicId;
+    wx.navigateTo({
+      url: '../play/play?musicId=' + musicId,
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

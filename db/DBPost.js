@@ -2,61 +2,44 @@ class DBPost {
 
   // 构造器
   constructor() {
-    this.name = 'My name is DBPost'
+    this.name = 'My name is DBPost';
   }
 
   // 根据关键词获取搜索结果
   search(searchword) {
     var result = [{
       'name': 'name1',
-      'author': 'author1'
+      'author': 'author1',
+      'musicId': '0'
     }, {
-      'name': 'name2',
-      'author': 'author2'
+      'name': 'name1',
+      'author': 'author1',
+      'musicId': '2'
     }, {
-      'name': 'name3',
-      'author': 'author3'
+      'name': 'name1',
+      'author': 'author1',
+      'musicId': '3'
     }, {
-      'name': 'name4',
-      'author': 'author4'
+      'name': 'name1',
+      'author': 'author1',
+      'musicId': '4'
     }, {
-      'name': 'name5',
-      'author': 'author5'
-    }, {
-      'name': 'name6',
-      'author': 'author6'
-    }, {
-      'name': 'name2',
-      'author': 'author2'
-    }, {
-      'name': 'name3',
-      'author': 'author3'
-    }, {
-      'name': 'name4',
-      'author': 'author4'
-    }, {
-      'name': 'name5',
-      'author': 'author5'
-    }, {
-      'name': 'name6',
-      'author': 'author6'
-    }, {
-      'name': 'name2',
-      'author': 'author2'
-    }, {
-      'name': 'name3',
-      'author': 'author3'
-    }, {
-      'name': 'name4',
-      'author': 'author4'
-    }, {
-      'name': 'name5',
-      'author': 'author5'
-    }, {
-      'name': 'name6',
-      'author': 'author6'
-    }]
-    return result
+      'name': 'name1',
+      'author': 'author1',
+      'musicId': '5'
+    }];
+    return result;
+  }
+
+  // 根据ID获取音乐的详细信息
+  getMusicDetail(musicID) {
+    var d = {
+      audiosrc: 'http://localhost:8080/resource/01.m4a',
+      cover: 'http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130',
+      name: '放課後ディストラクション',
+      author: 'やくしまるえつこ',
+    }
+    return d
   }
 
   // constructor(id) {

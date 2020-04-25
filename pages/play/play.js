@@ -1,6 +1,8 @@
 // pages/play/play.js
-
-const app = getApp()
+import {
+  DBPost
+} from '../../db/DBPost.js';
+const app = getApp();
 const innerAudioContext = wx.createInnerAudioContext();
 Page({
 
@@ -8,12 +10,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    audio: {
-      audiosrc: 'http://localhost:8080/resource/01.m4a',
-      cover: 'http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130',
-      name: '放課後ディストラクション',
-      author: 'やくしまるえつこ',
-    },
+    // audio: {
+    //   audiosrc: 'http://localhost:8080/resource/01.m4a',
+    //   cover: 'http://p2.music.126.net/iE2PqDZ9nNNsmpUOzqtr2g==/109951163442955471.jpg?param=130y130',
+    //   name: '放課後ディストラクション',
+    //   author: 'やくしまるえつこ',
+    // },
     music_on: true, //音乐刚开始，用于设置旋转动画
     isPlayAudio: false, //是否正在播放
     audioSeek: 0,
@@ -31,7 +33,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    //动态设置圆圈大小
+    // 设置外观
+    this.initAppearance()
+    // 获取播放音乐的id
+    var musicId = options.musicId;
+    // 根据ID获取音乐的详细信息
+    this.dbPost = new DBPost();
+    // 把数据加载到页面
+    this.setData({
+      audio: this.dbPost.getMusicDetail(musicId)
+    })
+  },
+
+  initAppearance() {
+    // 动态设置圆圈大小
     var sw = wx.getSystemInfoSync().windowWidth;
     var w = sw * 0.75;
     this.setData({
