@@ -21,12 +21,11 @@ Page({
   onLoad: function(options) {
     // 获取关键词
     var sw = options.searchword
-    this.dbPost = new DBPost();
     this.setData({
       searchword: sw,
     })
     //获取搜索结果
-    var url = "http://localhost:8081//Server/search?searchword=" + sw
+    var url = "http://localhost:8081/Server/search?searchword=" + sw
     utilApi.requestPromise(url)
       .then(res => {
         this.setData({

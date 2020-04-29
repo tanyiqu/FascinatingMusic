@@ -15,14 +15,6 @@ Page({
   onSearcTap() {
     // 处理关键词
     searchword = searchword.trim()
-    // if (searchword == ''){
-    //   console.log('空')
-    //   wx.showToast({
-    //     title: '请输入关键词！',
-    //     icon: 'none',
-    //   })
-    //   return
-    // }
     wx.navigateTo({
       url: '../list/list?searchword=' + searchword, 
     })
