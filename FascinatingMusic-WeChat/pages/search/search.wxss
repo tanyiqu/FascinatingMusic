@@ -7,12 +7,30 @@
   /* background-color: #7f7f7f; */
 }
 
-.input{
+.input {
   /* 设置只有底部一条线 */
   border-bottom: solid 1px #c1c7cb;
   width: 70%;
   margin: 0 auto;
   padding: 10px;
-
 }
 
+.searsh-tag {
+  margin: 10rpx 15rpx;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.searsh-hot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.searsh-hot-block {
+  margin: 10rpx 10rpx;
+  padding: 8rpx 20rpx;
+  width: fit-content;
+  background-color: #d5d5d5;
+  border-radius: 50rpx;
+}

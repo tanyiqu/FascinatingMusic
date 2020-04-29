@@ -25,7 +25,7 @@ select * from Yy where yy_mz like '%萤%';
 -- 插入数据
 insert into Yy values('0000001', '闫东炜', '萤火虫之愿(完整版)', 'http://localhost:8080/resource/music/萤火虫之愿(完整版).mp3', 'http://localhost:8080/resource/music/萤火虫之愿(完整版).jpg', 0);
 insert into Yy values('0000002', '闫东炜', '萤火虫の怨', 'http://localhost:8080/resource/music/萤火虫の怨.mp3', 'http://localhost:8080/resource/music/萤火虫の怨.jpg', 0);
-insert into Yy values('0000003', 'やくしまるえつこ', '放課後ディストラクション', 'http://localhost:8080/resource/music/放課後ディストラクション.mp3', 'http://localhost:8080/resource/music/放課後ディストラクション.jpg', 0);
+insert into Yy values('0000337', '丸子呦', '广寒宫', 'http://localhost:8080/resource/music/广寒宫.mp3', 'http://localhost:8080/resource/music/广寒宫.jpg', 0);
 
 
 

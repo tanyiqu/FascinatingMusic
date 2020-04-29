@@ -7,4 +7,22 @@
     <button class="btn" bindtap="onSearcTap">搜索</button>
   </view>
 
+  <view class="searsh-tag">
+    <text>热门搜索</text>
+  </view>
+
+  <view class="searsh-hot">
+
+    <block wx:for="{{hotList}}" wx:key="key" wx:for-item="item">
+
+      <view class="searsh-hot-block" catchtap="onHotTap" data-name="{{item}}">
+        {{item}}
+      </view>
+
+    </block>
+
+
+  </view>
+
+
 </view>

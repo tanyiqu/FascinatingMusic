@@ -8,7 +8,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    hotList: [
+      '青空', 'Here With You', 'Endless Tears',
+      '繁华的寂静', 'You', '萤火虫', '广寒宫',
+      '四叶草的幻想', '夜空的寂静', '花火が瞬く夜に'
+    ]
   },
 
   // 搜索
@@ -16,12 +20,21 @@ Page({
     // 处理关键词
     searchword = searchword.trim()
     wx.navigateTo({
-      url: '../list/list?searchword=' + searchword, 
+      url: '../list/list?searchword=' + searchword,
     })
+    searchword = ''
   },
 
+  // 获取输入 
   getInputValue(e) {
     searchword = e.detail.value;
+  },
+
+  // 点击热门搜索
+  onHotTap(e) {
+    var name = e.currentTarget.dataset.name
+    searchword = name.trim()
+    this.onSearcTap()
   },
 
   /**
