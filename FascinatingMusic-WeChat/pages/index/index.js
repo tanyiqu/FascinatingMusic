@@ -26,18 +26,24 @@ Page({
     })
   },
 
-  onSearchTap(){
+  onSearchTap() {
     console.log('搜索')
     wx.navigateTo({
       url: '../search/search',
     })
   },
 
-  onTapToPlay(e){
+  onTapToPlay(e) {
     var id = e.currentTarget.dataset.musicId;
     console.log('点击' + id)
     wx.navigateTo({
       url: '../play/play?musicId=' + id,
+    })
+  },
+
+  onTapToAbout() {
+    wx.navigateTo({
+      url: '../about/about',
     })
   },
 

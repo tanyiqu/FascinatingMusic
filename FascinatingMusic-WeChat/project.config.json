@@ -83,6 +83,13 @@
 					"pathName": "pages/list/list",
 					"query": "searchword=萤火虫",
 					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "关于",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

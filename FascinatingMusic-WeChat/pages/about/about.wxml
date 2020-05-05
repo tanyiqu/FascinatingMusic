@@ -1,0 +1,22 @@
+<!--pages/about/about.wxml-->
+<view class="root">
+
+  <view class="head">
+  </view>
+
+  <text class="txt">魅音播放器</text>
+  <view class="about-app">
+    <text class="txt-inner"></text>
+  </view>
+
+  <text class="txt">Tanyiqu</text>
+  <view class="about-me">
+    <text class="txt-inner">Tanyiqu，名字出自</text>
+  </view>
+
+  <text class="txt">感谢</text>
+  <view class="thanks">
+    <text class="txt-inner"></text>
+  </view>
+
+</view>
