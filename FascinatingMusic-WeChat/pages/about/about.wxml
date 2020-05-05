@@ -6,17 +6,32 @@
 
   <text class="txt">魅音播放器</text>
   <view class="about-app">
-    <text class="txt-inner"></text>
+    <text class="txt-inner">魅音播放器，一款音乐播放类微信小程序，由Tanyiqu在2020年4月23日独立编写的小程序实战项目，作为本学期《移动终端开发》课程的结课作业，项目开源。
+        \n仓库地址：https://github.com/Tanyiqu/FascinatingMusic
+        \n项目中使用的服务器（两个）均为本地服务器，存放的音乐资源由Tomcat服务器托管
+        \n项目中使用的337首音乐均为网易云音乐内缓存得到，部分音乐的下载权是使用网易VIP或单曲购买后获得的
+        \n项目代码注释比较齐全，目录结构也比较清晰。以后尽量会添加新的功能，敬请期待！项目仅用于学习用途！</text>
   </view>
 
   <text class="txt">Tanyiqu</text>
   <view class="about-me">
-    <text class="txt-inner">Tanyiqu，名字出自</text>
+    <text class="txt-inner">Tanyiqu，名字出自唐代诗人白居易的《琵琶行》中的“莫辞更坐弹一曲”
+        Tanyiqu在写此项目时为大三学生（2020年4月23日）
+        本科为河南城建学院，计算机科学与技术专业
+        \n平时时间学习计算机相关的知识，有时间就会写点代码，会C/C++/C#/java/Python…
+        除C和java为学校所授，其余均为自学。
+        对编程极其热爱！
+        \n个人主页：https://tanyiqu.github.io
+        \n邮箱：1953649096@qq.com
+        \nGitHub：https://github.com/Tanyiqu</text>
   </view>
 
   <text class="txt">感谢</text>
   <view class="thanks">
-    <text class="txt-inner"></text>
+    <text class="txt-inner">百度搜索引擎：https://www.baidu.com
+        \nCSDN博客：https://www.csdn.net
+        \n阿里巴巴矢量图标库：https://www.iconfont.cn
+        \nGitHub主页：https://github.com</text>
   </view>
 
 </view>
