@@ -2,6 +2,8 @@
 
 <view class="root">
 
+  <image class="bg" src="../../resource/imgs/bg-about.png" />
+
   <view class="body">
 
     <view>

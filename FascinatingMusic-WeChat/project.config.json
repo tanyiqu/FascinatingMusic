@@ -64,10 +64,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 1,
 					"name": "播放页",
 					"pathName": "pages/play/play",
-					"query": "",
+					"query": "musicId=0000042",
 					"scene": null
 				},
 				{

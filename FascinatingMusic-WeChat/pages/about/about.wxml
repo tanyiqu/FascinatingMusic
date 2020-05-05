@@ -1,7 +1,7 @@
 <!--pages/about/about.wxml-->
 <view class="root">
 
-  <image class="bg" src="../../resource/imgs/bg.png" />
+  <image class="bg" src="../../resource/imgs/bg-about.png" />
 
   <view class="head">
     <image src="../../resource/imgs/logo.png" mode="widthFix"/>

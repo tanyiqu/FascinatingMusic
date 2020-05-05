@@ -2,6 +2,8 @@
 
 <view class="root">
 
+  <image class="bg" src="../../resource/imgs/bg-search.png" />
+
   <view class="searchBar">
     <input class="input" bindinput="getInputValue"></input>
     <button class="btn" bindtap="onSearcTap">搜索</button>
