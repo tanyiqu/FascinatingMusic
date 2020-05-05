@@ -20,27 +20,6 @@ class DBPost {
   search(searchword) {
     console.log('搜索：[' + searchword + ']')
     var result = [];
-
-    // requestPromise("http://localhost:8081//Server/search?searchword=搜索XXX")
-    //   // 使用.then处理结果
-    //   .then(res => {
-    //     console.log(res.data);
-    //     return result
-    //   })
-
-    // wx.request({
-    //   url: 'http://localhost:8081//Server/search?searchword=搜索XXX',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   success: function(res) {
-    //     console.log(res.data);
-    //     result = res.data;
-    //     console.log(result);
-    //     return result;
-    //   },
-    // })
-
     return result;
 
   }
