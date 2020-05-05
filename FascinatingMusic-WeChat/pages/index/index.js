@@ -24,14 +24,20 @@ Page({
       recommendList_2: dataObj.recommendList_2,
       latestMusic: dataObj.latestMusic
     })
-
-
   },
 
   onSearchTap(){
     console.log('搜索')
     wx.navigateTo({
       url: '../search/search',
+    })
+  },
+
+  onTapToPlay(e){
+    var id = e.currentTarget.dataset.musicId;
+    console.log('点击' + id)
+    wx.navigateTo({
+      url: '../play/play?musicId=' + id,
     })
   },
 

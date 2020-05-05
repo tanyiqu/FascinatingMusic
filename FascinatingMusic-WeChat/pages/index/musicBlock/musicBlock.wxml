@@ -3,7 +3,8 @@
 音乐块
  -->
 <template name="music-block">
-  <view class="musicBlock">
+  <!-- <view class="musicBlock"> -->
+  <view>
     <!-- <image src="../../resource/imgs/cover01.jpg" mode="widthFix" /> -->
     <image src="{{item['cover']}}" mode="widthFix" />
     <text>{{item['title']}}</text>
