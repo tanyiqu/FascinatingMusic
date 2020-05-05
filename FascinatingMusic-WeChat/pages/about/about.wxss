@@ -12,7 +12,36 @@ page {
 
 .head {
   width: 100%;
-  height: 22%;
+  /* height: 22%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.title {
+  color: #515659;
+  font-size: 32rpx;
+  margin-bottom: 1%;
+}
+
+.author {
+  color: #515659;
+  font-size: 26rpx;
+}
+
+.head > image {
+  margin: 0 auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 25%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #e9e9e9;
+  margin-bottom: 3%;
 }
 
 .txt {
@@ -22,7 +51,7 @@ page {
 
 .txt-inner {
   font-size: 26rpx;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about-app {

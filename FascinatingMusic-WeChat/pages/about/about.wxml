@@ -2,7 +2,12 @@
 <view class="root">
 
   <view class="head">
+    <image src="../../resource/imgs/logo.png" mode="widthFix"/>
+    <text class="title">魅音播放器 Version 1.0.0</text>
+    <text class="author">Code by Tanyiqu</text>
   </view>
+
+  <view class="line"></view>
 
   <text class="txt">魅音播放器</text>
   <view class="about-app">
