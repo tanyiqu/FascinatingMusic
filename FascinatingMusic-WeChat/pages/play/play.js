@@ -45,6 +45,7 @@ Page({
       success: function(res) {
         _this.setData({
           audio: res.data
+
         })
         // 获取完成后初始化
         _this.Initialization();

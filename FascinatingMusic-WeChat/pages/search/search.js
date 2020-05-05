@@ -22,7 +22,7 @@ Page({
     wx.navigateTo({
       url: '../list/list?searchword=' + searchword,
     })
-    searchword = ''
+    // searchword = ''
   },
 
   // 获取输入 
