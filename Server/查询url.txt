@@ -1,0 +1,5 @@
+查询：
+http://39.102.32.246/wx-server/search?searchword=You
+
+详情：
+http://39.102.32.246/wx-server/detail?musicId=0000001

@@ -36,7 +36,7 @@ Page({
     // 获取播放音乐的id
     var musicId = options.musicId;
     console.log("musicId:" + musicId)
-    var url = "http://localhost:8081//Server/detail?musicId=" + musicId
+    var url = "http://39.102.32.246/wx-server/detail?musicId=" + musicId
     console.log("url:" + url)
     // 根据ID获取音乐的详细信息
 

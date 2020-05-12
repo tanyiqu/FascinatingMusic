@@ -1,6 +1,6 @@
 -- 创建数据库
--- create database MYBFQ
--- use MYBFQ
+-- create database MYBFQ;
+-- use MYBFQ;
 
 -- 创建表
 -- 1.曲库表
@@ -12,7 +12,7 @@ create table Yy(
     yy_ydz varchar(128) not null,
     yy_fmdz varchar(128) not null,
     yy_dzs int default 0
-)
+);
 */
 
 -- 查看
