@@ -7,8 +7,8 @@
 
   <view class="tool">
     <button bindtap="onTapToAbout">关于</button>
-    <button>推荐</button>
     <button>排行</button>
+    <button bindtap="onTapToDynamic">动态</button>
     <button bindtap="onSearchTap">搜索</button>
   </view>
 

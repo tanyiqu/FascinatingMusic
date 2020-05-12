@@ -1,0 +1,20 @@
+<!--pages/dynamic-detail/dynamic-detail.wxml-->
+
+<image class="bg" src="../../resource/imgs/bg-about.png" />
+<view class="root">
+
+  <view class="date">5月11日</view>
+
+  <view class="content">一点点的小事其实到底还是在意，心里想的嘴上说的最假了，所以还是介意，耿耿于怀。现在不会揪着不放让大家不开心，但是会放弃很多让自己更好过。以前都是在心里计较的。现在，事情发生了就跟突然被蚊子叮了一下，恍惚了那么一下子，又跟没事人一样。</view>
+
+  <navigator url="../play/play?musicId=0000042" navigate>
+    <view>
+      <image src="http://localhost:8080/resource/music/Endless Tears.png" />
+      <view>
+        <text class="name">Endless Tears</text>
+        <text class="author">CLIFF EDGE</text>
+      </view>
+    </view>
+  </navigator>
+
+</view>

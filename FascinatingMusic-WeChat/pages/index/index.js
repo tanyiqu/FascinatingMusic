@@ -47,6 +47,12 @@ Page({
     })
   },
 
+  onTapToDynamic() {
+    wx.navigateTo({
+      url: '../dynamic-detail/dynamic-detail',
+    })
+  },
+
   videoErrorCallback: function(e) {
 
     console.log('视频错误信息:' + e.detail.errMsg);

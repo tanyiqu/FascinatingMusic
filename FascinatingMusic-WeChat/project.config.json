@@ -90,6 +90,20 @@
 					"pathName": "pages/about/about",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "动态详情",
+					"pathName": "pages/dynamic-detail/dynamic-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "动态列表",
+					"pathName": "pages/dynamic-list/dynamic-list",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
