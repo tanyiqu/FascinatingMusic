@@ -5,9 +5,10 @@ import java.sql.*;
 @SuppressWarnings("unused")
 public class DBUtil {
 
-    public static final String URL="jdbc:mysql://localhost:3306/MYBFQ?useSSL=false&serverTimezone=UTC";
+//    public static final String URL="jdbc:mysql://localhost:3306/MYBFQ?useSSL=false&serverTimezone=UTC";
+    public static final String URL="jdbc:mysql://39.102.32.246:3306/MYBFQ?useSSL=false&serverTimezone=UTC";
     public static final String USER="root";
-    public static final String PASSWORD="mysql";
+    public static final String PASSWORD="123456";
 
     protected static Statement s=null;
     protected static ResultSet rs=null;

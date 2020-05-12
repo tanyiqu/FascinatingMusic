@@ -334,3 +334,4 @@ insert into Yy values("0000333", "饭碗的彼岸", "小夏，多变的天气如
 insert into Yy values("0000334", "饭碗的彼岸", "小河", "http://localhost:8080/resource/music/小河.mp3", "http://localhost:8080/resource/music/小河.jpg", 0);
 insert into Yy values("0000335", "饭碗的彼岸", "风居住的街道（Piano ver） (COVER：磯村由紀子）", "http://localhost:8080/resource/music/风居住的街道（Piano ver） (COVER：磯村由紀子）.mp3", "http://localhost:8080/resource/music/风居住的街道（Piano ver） (COVER：磯村由紀子）.jpg", 0);
 insert into Yy values("0000336", "高野健一", "さくら", "http://localhost:8080/resource/music/さくら.mp3", "http://localhost:8080/resource/music/さくら.jpg", 0);
+insert into Yy values('0000337', '丸子呦', '广寒宫', 'http://localhost:8080/resource/music/广寒宫.mp3', 'http://localhost:8080/resource/music/广寒宫.jpg', 0);
