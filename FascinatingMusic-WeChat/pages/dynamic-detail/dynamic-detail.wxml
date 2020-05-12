@@ -9,7 +9,7 @@
 
   <navigator url="../play/play?musicId=0000042" navigate>
     <view>
-      <image src="http://localhost:8080/resource/music/Endless Tears.png" />
+      <image src="http://localhost:8080/resource/music/Endless Tears.png" mode="widthFix"/>
       <view>
         <text class="name">Endless Tears</text>
         <text class="author">CLIFF EDGE</text>

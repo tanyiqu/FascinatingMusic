@@ -1,2 +1,21 @@
 <!--pages/dynamic-list/dynamic-list.wxml-->
-<text>pages/dynamic-list/dynamic-list.wxml</text>
+<view class="root">
+
+
+  <block wx:for="{{dynamicList}}" wx:key="key" wx:for-item="item">
+
+    <view class="item" catchtap="onTapToDynamicDetail" data-dynamic-id="{{item.did}}">
+      <view>
+        <image class="img" src="{{item.cover}}" mode="widthFix" />
+      </view>
+
+      <view class="right">
+        <view class="time">{{item.time}}</view>
+        <view class="content">{{item.content}}</view>
+      </view>
+    </view>
+
+  </block>
+
+
+</view>
