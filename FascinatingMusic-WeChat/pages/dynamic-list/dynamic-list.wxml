@@ -4,14 +4,25 @@
 
   <block wx:for="{{dynamicList}}" wx:key="key" wx:for-item="item">
 
-    <view class="item" catchtap="onTapToDynamicDetail" data-dynamic-id="{{item.did}}">
+    <view class="item">
       <view>
         <image class="img" src="{{item.cover}}" mode="widthFix" />
       </view>
 
-      <view class="right">
+      <view class="right" catchtap="onTapToDynamicDetail" data-dynamic-id="{{item.did}}">
         <view class="time">{{item.time}}</view>
         <view class="content">{{item.content}}</view>
+
+        <navigator url="{{item.url}}" navigate>
+          <view>
+            <image src="{{item.cover}}" mode="widthFix" />
+            <view>
+              <text class="name">{{item.name}}</text>
+              <text class="author">{{item.author}}</text>
+            </view>
+          </view>
+        </navigator>
+
       </view>
     </view>
 

@@ -32,3 +32,39 @@
 .content {
   font-size: 30rpx;
 }
+
+navigator {
+  width: 95%;
+  height: 100rpx;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 1%;
+  background-color: #f3f3f380;
+  border-radius: 15rpx;
+}
+
+navigator > view {
+  display: flex;
+  flex-direction: row;
+}
+
+navigator > view > view {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 32rpx;
+  margin: 3rpx 20rpx 0 20rpx;
+}
+
+.author {
+  font-size: 22rpx;
+  margin: 20rpx 20rpx 0 20rpx;
+}
+
+navigator > view > image {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 20%;
+}
