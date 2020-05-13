@@ -46,7 +46,7 @@ Page({
 
   onTapToDynamic() {
     wx.navigateTo({
-      url: '../dynamic-detail/dynamic-detail',
+      url: '../dynamic-list/dynamic-list',
     })
   },
 

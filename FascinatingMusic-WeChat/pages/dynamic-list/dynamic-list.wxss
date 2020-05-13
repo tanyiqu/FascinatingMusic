@@ -7,13 +7,9 @@
 
 .item {
   display: flex;
-  border-bottom: solid 1px #b8aeae;
+  border-bottom: solid 1px #f6f6f6;
   margin-top: 8rpx;
   padding-bottom: 8rpx;
-}
-
-.item:hover {
-  /* background-color: #afafaf40; */
 }
 
 .img {

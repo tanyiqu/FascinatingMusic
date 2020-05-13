@@ -2,7 +2,8 @@
 
 <view class="root">
 
-  <image class="bg" src="../../resource/imgs/bg-about.png" />
+  <!-- <image class="bg" src="../../resource/imgs/bg-about.png" /> -->
+  <image class="bg" src="{{audio['cover']}}" />
 
   <view class="body">
 

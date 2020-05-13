@@ -12,7 +12,7 @@
   filter: opacity(0.15);
 }
 
-.date {
+.time {
   font-size: 40rpx;
   margin-bottom: 2%;
 }
