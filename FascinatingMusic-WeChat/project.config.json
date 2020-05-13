@@ -81,7 +81,7 @@
 					"id": 3,
 					"name": "搜索结果",
 					"pathName": "pages/list/list",
-					"query": "searchword=萤火虫",
+					"query": "searchword=a",
 					"scene": null
 				},
 				{

@@ -13,7 +13,7 @@
 }
 
 .img {
-  width: 110rpx;
+  width: 100rpx;
   margin: 1.5%;
   margin-left: 5%;
   border-radius: 7.5%;
@@ -67,4 +67,5 @@ navigator > view > image {
   width: 96rpx;
   height: 96rpx;
   border-radius: 20%;
+  filter: opacity(0.75);
 }

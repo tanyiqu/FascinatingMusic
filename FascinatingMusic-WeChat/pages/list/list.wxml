@@ -1,7 +1,7 @@
 <!--pages/list/list.wxml-->
 <view class="root">
 
-  <text>"{{searchword}}"的搜索结果：</text>
+  <text>"{{searchword}}"的搜索结果：共{{searchResult.length}}条</text>
 
   <block wx:for="{{searchResult}}" wx:key="key" wx:for-item="item">
     <!-- 不用模板了 -->

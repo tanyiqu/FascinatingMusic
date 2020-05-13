@@ -21,6 +21,7 @@ page {
   width: 110rpx;
   position: absolute;
   left: 5rpx;
+  border-radius: 10%;
 }
 
 .name {
