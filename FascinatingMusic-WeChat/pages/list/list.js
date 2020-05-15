@@ -25,7 +25,8 @@ Page({
       searchword: sw,
     })
     //获取搜索结果
-    var url = "http://39.102.32.246/wx-server/search?searchword=" + sw
+    // var url = "http://39.102.32.246/wx-server/search?searchword=" + sw
+    var url = "http://tanyiqu.top/wx-server/search?searchword=" + sw
     utilApi.requestPromise(url)
       .then(res => {
         this.setData({
